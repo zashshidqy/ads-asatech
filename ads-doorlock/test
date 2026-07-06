@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Pasang Smart Door Lock Ahli & Bergaransi</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #102a43 0%, #243b53 100%);
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #bcccdc;
+        }
+        .btn-cta {
+            display: inline-block;
+            background-color: #25d366; /* Warna WhatsApp */
+            color: white;
+            padding: 16px 32px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .btn-cta:hover {
+            transform: scale(1.05);
+            background-color: #20ba5a;
+        }
+
+        /* Problem Section */
+        .problems {
+            background-color: #fff;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #486581;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            background: #f0f4f8;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #486581;
+            text-align: left;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+            color: #102a43;
+        }
+
+        /* Services & Table Section */
+        .services {
+            background-color: #f0f4f8;
+        }
+        .table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th, td {
+            padding: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background-color: #102a43;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: #fff;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .faq-item h3 {
+            color: #102a43;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        /* Floating WhatsApp Button */
+        .floating-wa {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            font-weight: bold;
+            font-size: 24px;
+            z-index: 1000;
+            transition: transform 0.2s;
+        }
+        .floating-wa:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer / Closing CTA */
+        .footer-cta {
+            background: #102a43;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .footer-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        .footer-cta p {
+            margin-bottom: 25px;
+            color: #bcccdc;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .section-title { font-size: 1.6rem; }
+            th, td { padding: 10px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. HERO SECTION -->
+    <header class="hero">
+        <div class="container" style="padding: 0;">
+            <h1>Pintu Rumah Lebih Aman & Praktis Tanpa Kunci Konvensional!</h1>
+            <p>Jasa Pasang Smart Door Lock Ahli, Cepat, dan Bergaransi. Solusi Keamanan Modern untuk Rumah, Apartemen, dan Kantor Anda.</p>
+            <!-- Ganti nomor WhatsApp di bawah ini dengan nomor Anda (format: 628xxxxxx) -->
+            <a href="https://wa.me/628123456789?text=Halo%20saya%20tertarik%20dengan%20Jasa%20Pasang%20Smart%20Door%20Lock" class="btn-cta" target="_blank">Konsultasi Gratis Sekarang (WhatsApp)</a>
+        </div>
+    </header>
+
+    <!-- 2. PAIN POINTS / PROBLEMS -->
+    <section class="problems">
+        <div class="container">
+            <h2 class="section-title">Apakah Anda Sering Mengalami Ini?</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Sering Lupa Bawa Kunci?</h3>
+                    <p>Repot harus nunggu orang rumah pulang atau panggil tukang kunci duplikat saat kunci tertinggal di dalam.</p>
+                </div>
+                <div class="card">
+                    <h3>Khawatir Keamanan Rumah?</h3>
+                    <p>Kunci konvensional sangat mudah dibobol maling menggunakan kunci T atau cairan kimia dalam hitungan menit.</p>
+                </div>
+                <div class="card">
+                    <h3>Takut Salah Pasang?</h3>
+                    <p>Sudah beli unit Smart Lock mahal-mahal, tapi bingung cara pasangnya atau takut merusak estetika pintu Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SERVICES & ADVANTAGES TABLE -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Serahkan Pada Ahlinya, Terima Beres!</h2>
+            <p style="text-align: center; margin-bottom: 20px;">Kami melayani pemasangan berbagai jenis pintu (Kayu, Aluminium, Besi) dan berbagai merk populer seperti Samsung, Philips, Yale, Bardi, Tuya, Xiaomi, dll.</p>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kenapa Pilih Jasa Kami?</th>
+                            <th>Keuntungan untuk Anda</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Teknisi Berpengalaman</strong></td>
+                            <td>Proses instalasi rapi, presisi, dan tidak merusak keindahan pintu Anda.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Peralatan Lengkap</strong></td>
+                            <td>Kami membawa alat pembobok (router/chisel) modern agar pengerjaan cepat selesai.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Garansi Pemasangan</strong></td>
+                            <td>Jaminan perawatan gratis selama 30 hari jika terjadi kendala teknis pasca-pasang.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Edukasi Penggunaan</strong></td>
+                            <td>Teknisi kami akan memandu Anda sampai mahir mendaftarkan sidik jari, PIN, dan aplikasi HP.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FAQ SECTION -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+            <div style="margin-top: 30px;">
+                <div class="faq-item">
+                    <h3>Q: Apakah unit Smart Lock-nya disediakan dari sini?</h3>
+                    <p>A: Kami menerima jasa pasang saja (unit dari Anda) maupun paket terima beres (unit + jasa pasang dari kami). Silakan konsultasikan kebutuhan Anda via WhatsApp.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: Berapa lama proses pemasangannya?</h3>
+                    <p>A: Standar pemasangan memakan waktu sekitar 1 hingga 2 jam per pintu, tergantung tingkat kesulitan materi pintu Anda.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q: Apakah melayani area luar kota?</h3>
+                    <p>A: Saat ini kami melayani area Jabodetabek. Untuk wilayah spesifik lainnya, silakan konfirmasi ke admin kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CLOSING / FOOTER CTA -->
+    <footer class="footer-cta">
+        <div class="container" style="padding: 0;">
+            <h2>Tingkatkan Keamanan Rumah Anda Sekarang!</h2>
+            <p>Jangan tunggu sampai hal yang tidak diinginkan terjadi. Slot teknisi untuk minggu ini terbatas.</p>
+            <a href="https://wa.me/628123456789?text=Halo%20saya%20tertarik%20dengan%20Jasa%20Pasang%20Smart%20Door%20Lock" class="btn-cta" target="_blank">Amankan Jadwal Pasang Anda</a>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <!-- Tombol melayang di pojok kanan bawah agar mudah diakses di HP -->
+    <a href="https://wa.me/628123456789?text=Halo%20saya%20tertarik%20dengan%20Jasa%20Pasang%20Smart%20Door%20Lock" class="floating-wa" target="_blank" title="Chat WhatsApp">
+        WA
+    </a>
+
+</body>
+</html>
